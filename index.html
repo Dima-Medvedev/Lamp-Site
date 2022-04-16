@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamp</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero"><nav>
+        <img src="images/menu.png" class="menu-img" alt="">
+        <img src="images/logo.png" class="logo" alt="">
+        <ul>
+            <li ><a href="">Latest</a></li>
+            <li ><a href="">Modern</a></li>
+            <li ><a href="">Contemporary</a></li>
+            <li ><a href="">Affordable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>  
+    </nav>
+
+    <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp" alt="">
+        <img src="images/light.png" class="light" id="light" alt="">
+    </div>
+
+    <div class="text-container">
+        <h1>Latest<br>in Lighting</h1>
+        <p>This is the first lamp from our company. we are making 
+            a huge collection of modern lamps in all categories from home use office use
+        </p>
+        <a href="">Check all Collections</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-about__us">
+                <p class="footer-title">About as</p>
+                <p class="about__us-text">our company sells lamps and pleases customers for one year. We have a large assortment and all lamps are of good quality, there will be no problems.</p>
+            </div>
+            <div class="footer-publication">
+                <p class="footer-title">Publications</p>
+                <p class="publication-text_1">VueLamp company videos</p>
+                <p class="publication-text_2">VueLamp presentations</p>
+                <p class="publication-text_3">VueLamp in Facebook. Follow the news in the most convenient way</p>
+            </div>
+            <div class="footer-projects">
+                <p class="footer-title">Projects</p>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-title">Contacts</p>
+                <img class="footer-img" src="images/position.png" alt="">
+                <p class="contact-text">Los Angeles, Hollywood Boulevard, house 14, 
+                </p>
+                    <img class="footer-img" src="images/phone.png" alt="">
+                <p class="contact-text">8 915 143 23 18</p>
+                <img class="footer-img" src="images/gmail.png" alt="">
+                <p class="contact-text"> VueLamp@mail.ru</p>
+            </div>
+        </div>  
+    </footer>
+    <div class="line-under__footer">
+        <div class="block-under__footer">
+            <p class="text-under__footer">2020-2021 © All rights reserved.</p></div>
+        </div>
+</footer>
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>
